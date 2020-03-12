@@ -1,6 +1,7 @@
 const eventModel = require('../models/event.model');
 
 module.exports.addEvent = (req, res) => {
+	
 	const Event = new eventModel({
 		type: req.body.type,
 		image: req.body.image,
